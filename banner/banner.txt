@@ -4,3 +4,29 @@
  /  __/ / / / /_/ /  / /_/ / /_/ / /_/ /
  \___/_/ /_/\__/_/   \____/ .___/\__, /
                          /_/    /____/
+usage: entropy [-h] [-b [1|2]] [-o <output_path>] [--timeout <timeout>]
+               [-t <tasks>] [-c <count>] [-q | -v]
+               [-a <ip:port> | -i <input_file> | --shodan <api> | --zoomeye <api>]
+               [-u] [--version]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -b [1|2], --brand [1|2]
+                        Choose the brand of IP webcam. (1)Netwave, (2)GoAhead.
+  -o <output_path>, --output <output_path>
+                        Output to the specified path.
+  --timeout <timeout>   Timeout in seconds.
+  -t <tasks>, --task <tasks>
+                        Run tasks number of connects in parallel.
+  -c <count>, --count <count>
+                        The number of IP you want to get.
+  -q, --quiet           Quiet mode.
+  -v, --verbose         Verbose mode.
+  -a <ip:port>, --address <ip:port>
+                        IP and port of the webcam.
+  -i <input_file>, --input <input_file>
+                        List of webcams addresses.
+  --shodan <api>        Attack through Shodan.
+  --zoomeye <api>       Attack through ZoomEye.
+  -u, --update          Update Entropy Toolkit.
+  --version             Show Entropy Toolkit version.
